@@ -7,7 +7,8 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "prettier": "prettier --write ."
+        "prettier": "prettier --check .",
+        "prettier:fix": "prettier --write ."
     },
     "dependencies": {
         "@emotion/react": "^11.10.5",

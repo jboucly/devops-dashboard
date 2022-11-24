@@ -1,9 +1,11 @@
 import DashboardOutlinedIcon from '@mui/icons-material/DashboardOutlined';
+import MonitorHeartOutlinedIcon from '@mui/icons-material/MonitorHeartOutlined';
 import DashboardIndex from '../pages/dashboard/DashboardIndex';
 import DashboardPageLayout from '../pages/dashboard/DashboardPageLayout';
 import GraphPage from '../pages/dashboard/GraphPage';
 import MetricsPage from '../pages/dashboard/MetricPage';
 import HomePage from '../pages/home/HomePage';
+import MonitoringPage from '../pages/monitoring/MonitoringPage';
 import { RouteType } from './config';
 
 const appRoutes: RouteType[] = [
@@ -43,6 +45,15 @@ const appRoutes: RouteType[] = [
                 },
             },
         ],
+    },
+    {
+        path: 'monitoring',
+        state: 'monitoring',
+        element: <MonitoringPage />,
+        sidebarProps: {
+            displayText: 'Monitoring',
+            icon: <MonitorHeartOutlinedIcon />,
+        },
     },
 ];
 

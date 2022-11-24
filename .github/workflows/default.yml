@@ -39,7 +39,7 @@ jobs:
               run: yarn prettier
 
             - name: Test
-              run: yarn test
+              run: yarn test --coverage --passWithNoTests --watchAll=false
               env:
                   CI: true
 
